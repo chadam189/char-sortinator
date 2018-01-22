@@ -1,18 +1,20 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const { sortinate } = require('./utils.js');
 
 const app = express();
 
-app.use(bodyParser.JSON());
+app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
   // serve up static files
+  res.send('hello world');
 });
 
 app.post('/sortinate', (req, res) => {
-	// get string 
-	// send it to helper function to sort string
-	// return result
+	const input = req.body.string || 'error';
+	const result = sortinate(input);
+	res.send(result);
 });
 
 app.all('*', (req, res) => {
