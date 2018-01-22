@@ -1,0 +1,19 @@
+{
+  "name": "char-sortinator",
+  "version": "1.0.0",
+  "description": "char sortinator mini-app",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadam189/char-sortinator.git"
+  },
+  "author": "Adam Miller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chadam189/char-sortinator/issues"
+  },
+  "homepage": "https://github.com/chadam189/char-sortinator#readme"
+}
