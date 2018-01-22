@@ -1,3 +1,8 @@
 body {
-	color: red;
+	text-align: center;
+	color: blue;
+}
+
+.container {
+	vertical-align: center;
 }
