@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/chadam189/char-sortinator/issues"
   },
-  "homepage": "https://github.com/chadam189/char-sortinator#readme"
+  "homepage": "https://github.com/chadam189/char-sortinator#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
