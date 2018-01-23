@@ -6,12 +6,13 @@
 </head>
 <body>
 	<h1>Input string to sortinate!</h1>
+<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 	<script src="./app.js"></script>
 	<div class="container">
 		<div class="input">
-			<form class="sortinate" action="/sortinate" method="post">
-				Enter string here: <input type="text" name="unsorted">
-				<input type="button" value="Submit">
+			<form class="sortinate" onSubmit="submitString(); return false;" >
+				Enter string here: <input type="text" class="unsorted">
+				<input type="submit" value="Submit">
 			</form>	
 		</div>
 		<div class="results">
