@@ -1,8 +1,29 @@
 body {
-	text-align: center;
+	font-family: Arial;
 	color: blue;
+	vertical-align: center;
 }
 
 .container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#submissions {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#submissions tr, th, td {
 	vertical-align: center;
+	border: 1px black solid;
+}
+
+#submissions tr, th {
+	width: 20%;
+	padding-left: 10%;
+	padding-right: 10%;
 }

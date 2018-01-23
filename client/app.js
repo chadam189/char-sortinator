@@ -34,11 +34,22 @@ const submitString = () => {
 		headers: new Headers({
 			'Content-Type': 'application/json'
 		})
-	}).then((response) => {
-	  	console.log(`response: ${response}`);
-	  	return response.json()
-	  })
+	})
+	  .then((response) => response.json())
 	  .catch(error => console.log(`Error: ${error}`))
-	  .then(result => console.log(`Success: ${JSON.stringify(result)}`));
+	  .then((sorted) => {
+	  	addNewSubmission(unsorted, sorted);
+
+      document.getElementsByClassName('unsorted')[0].value = '';
+
+	  });
 };
 
+const addNewSubmission = (unsorted, sorted) => {
+	const table = document.getElementById('submissions');
+  const newSubmission = table.insertRow(-1);
+  const input = newSubmission.insertCell(0);
+  const output = newSubmission.insertCell(1);
+	input.innerHTML = unsorted;
+  output.innerHTML = sorted;
+};
